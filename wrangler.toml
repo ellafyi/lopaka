@@ -1,0 +1,12 @@
+name = "lopaka"
+account_id = "8ce45695a65d63f50b7cd4f4fe622891"
+workers_dev = true
+
+[build]
+  # this command will be run before the Worker is packaged
+  command = "pnpm build"
+
+[site]
+  # point to the folder Vite outputs
+  bucket = "./dist"
+  entry-point = "workers-site"
